@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<center>
+    <h2>Are you sure do you want to delete {{task.title}}  record ???</h2>
+    <a href="{% url 'delete_' task.id %}" class="btn danger">Confirm</a>
+    <a href="{% url 'home' %}" class="btn restore">Cancel</a>
+   
+</center>
+{% endblock content %}

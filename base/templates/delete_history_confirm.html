@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<center>
+    <h2>Are you sure do you want to delete record from history???</h2>
+    <a href="{% url 'history_delete' history_task.id %}" class="btn danger">Confirm</a>
+    <a href="{% url 'history' %}" class="btn restore">Cancel</a>
+   
+</center>
+{% endblock content %}

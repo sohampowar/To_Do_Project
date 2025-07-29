@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<center>
+  
+<div class="container">
+    
+    {% if notask %}
+    <div class="empty-task">
+        <h3>No task created !!! Please create a task.</h3>
+        <a href="{% url 'add' %}" class="btn">Add Task</a>
+    </div>
+
+
+    {% else %}
+    
+    <div class="task-list">
+        <h2 class="page-title">All Task</h2>
+        {% for i in all_tasks %}
+        <div class="task-card">
+            <div class="task-info">
+                <h3>{{ i.title }}</h3>
+                <p>{{ i.desc }}</p>
+            </div>
+            <div class="task-actions">
+                <a href="{% url 'complete_task' i.id %}" class="btn success">Task Completed</a>
+                <a href="{% url 'edit' i.id %}" class="btn warning">Edit</a>
+                <a href="{% url 'confirm_delete' i.id %}" class="btn danger">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+</center>
+{% endblock content %}
