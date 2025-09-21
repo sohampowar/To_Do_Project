@@ -34,7 +34,7 @@ It demonstrates CRUD operations, Django views, models, templates, and Bootstrap 
 <img src="Add.png" alt="Add Task" style="width:80%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
 
 <h3>Complete List</h3>
-<img src="omplete.png" alt="Task List" style="width:80%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="Complete.png" alt="Task List" style="width:80%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
 
 <hr>
 
